@@ -869,21 +869,26 @@
     position: absolute;
     background-color: var(--white);
     border-radius: var(--radius-md);
-    padding: 1.5rem;
+    padding: 1.2rem;
     box-shadow: var(--shadow-lg);
     display: flex;
     align-items: center;
     max-width: 260px;
+    opacity: 0.9;
   }
   
   .float-1 {
-    bottom: 5%;
-    left: -5%;
+    /* bottom: 5%;
+    left: -5%; */
+    bottom: -15%;
+    left: -15%;
   }
   
   .float-2 {
-    top: 10%;
-    right: -5%;
+    /* top: 10%;
+    right: -5%; */
+    top: -15%;
+    right: -15%;
   }
   
   .float-icon {
@@ -916,6 +921,7 @@
     gap: 2px;
     flex-wrap: wrap;
     margin-top: 2rem;
+    display: none;
   }
   
   .partner-logo {
@@ -1635,3 +1641,17 @@
     }
   }
   
+
+
+
+
+  .mockup video {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    background: var(--gray-100);
+  }
