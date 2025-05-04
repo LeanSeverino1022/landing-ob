@@ -81,9 +81,7 @@
     transition: color 0.3s ease;
   }
   
-  a:hover {
-    color: var(--primary-dark);
-  }
+
   
   /* Layout */
   .container {
@@ -458,7 +456,7 @@
     background-color: var(--primary-dark);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    color: var(--white);
+    /* color: var(--white); */
   }
   
   .btn-cta {
@@ -786,7 +784,14 @@
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
   }
-  
+
+  @media (max-width: 768px) {
+    .feature-icon {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   /* How It Works */
   .how-it-works {
     background-color: var(--white);
@@ -863,6 +868,18 @@
     width: 100%;
     display: block;
   }
+
+
+  .mockup video {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    background: var(--gray-100);
+  }
   
   /* Floating Cards */
   .floating-card {
@@ -880,15 +897,15 @@
   .float-1 {
     /* bottom: 5%;
     left: -5%; */
-    bottom: -15%;
-    left: -15%;
+    bottom: -17%;
+    left: -7.5%;
   }
   
   .float-2 {
     /* top: 10%;
     right: -5%; */
-    top: -15%;
-    right: -15%;
+    top: -17%;
+    right: -7.5%;
   }
   
   .float-icon {
@@ -905,11 +922,13 @@
   }
   
   .float-content h5 {
+    text-align: start;
     margin-bottom: 0.25rem;
     font-size: 1rem;
   }
   
   .float-content p {
+    text-align: start;
     margin-bottom: 0;
     font-size: 0.85rem;
     color: var(--text-lighter);
@@ -1550,11 +1569,8 @@
       grid-template-columns: 1fr;
       gap: 3rem;
     }
-    
-    .floating-card {
-      position: static;
-      margin-bottom: 1rem;
-    }
+  
+
     
     .features-container {
       grid-template-columns: repeat(2, 1fr);
@@ -1643,15 +1659,39 @@
   
 
 
-
-
-  .mockup video {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
-    background: var(--gray-100);
+/* CONTROL RESPONSIVENESS OF FLOATING CARDS */
+@media (max-width: 1024px) {
+  .floating-card {
+    position: static;
+    display: inline-block;
+    width: calc(50% - 30px); /* Half width minus spacing */
+    max-width: 100%;
+    margin: 0 10px;
+    vertical-align: top;
   }
+
+  .float-1, .float-2 {
+    bottom: auto;
+    left: auto;
+    top: auto;
+    right: auto;
+  }
+
+  .hero-image {
+    text-align: center; /* Centers the inline-block elements */
+  }
+}
+
+/* Add this for mobile screens */
+@media (max-width: 768px) {
+  .floating-card {
+    display: block; /* Change to block to stack vertically */
+    width: 350px; /* Full width */
+    max-width: 100%;
+    margin: 10px auto 0; /* Vertical spacing between cards */
+  }
+
+  .hero-image {
+    text-align: left; /* Optional: align text to left on mobile */
+  }
+}

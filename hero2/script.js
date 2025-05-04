@@ -144,3 +144,4 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', updateHeader);
     updateHeader(); // Initialize on load
   });
+  
