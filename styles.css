@@ -1682,7 +1682,7 @@
   }
 }
 
-/* Add this for mobile screens */
+/* Add this responsive floating cards for mobile screens */
 @media (max-width: 768px) {
   .floating-card {
     display: block; /* Change to block to stack vertically */
