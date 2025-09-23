@@ -516,14 +516,32 @@
 
   .save-badge {
     display: inline-flex;
-        align-items: center;
-        background: #D2F9DA;
-        color: #1AA461;
-        padding: 0.5rem 1rem;
-        border-radius: 6px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        /* margin-bottom: 2rem; */
+    align-items: center;
+    background: #D2F9DA;
+    color: #0F623A;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  /* New class used in pricing: identical style to save-badge */
+  .save-pill {
+    display: inline-flex;
+    align-items: center;
+    background: #D2F9DA;
+    color: #0F623A;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  /* Subtext under price, used for Yearly and 3-Months */
+  .pricing-sub {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0.75rem 0 1rem;
   }
 
   /* Header */
@@ -1183,7 +1201,7 @@
   .pricing-plan {
     background-color: var(--white);
     border-radius: var(--radius-md);
-    padding: 3rem;
+    padding: 2rem;
     box-shadow: var(--shadow-md);
     max-width: 350px;
     width: 100%;
@@ -1210,6 +1228,7 @@
     font-weight: 600;
     padding: 0.4rem 1rem;
     border-radius: 50px;
+    border-radius: 10px;
     white-space: nowrap;
   }
 
@@ -1261,7 +1280,7 @@
   }
 
   .pricing-features li {
-    padding: 0.75rem 0;
+    padding: 0.55rem 0;
     color: var(--text-light);
     display: flex;
     align-items: center;
@@ -1269,7 +1288,7 @@
 
   .pricing-features li i {
     /* color: var(--success); */
-    color: #6CCA9C;
+    color: #30b981;
     margin-right: 0.75rem;
   }
 
