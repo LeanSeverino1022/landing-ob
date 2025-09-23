@@ -514,6 +514,18 @@
     width: 100%;
   }
 
+  .save-badge {
+    display: inline-flex;
+        align-items: center;
+        background: #D2F9DA;
+        color: #1AA461;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        /* margin-bottom: 2rem; */
+  }
+
   /* Header */
   header {
     background-color: rgba(255, 255, 255, 0.9);
@@ -1186,7 +1198,8 @@
   }
 
   .pricing-plan.popular::before {
-    content: 'Most Popular';
+    /* content: 'Most Popular'; */
+    content: 'BEST VALUE'; /* for now let's make it best value*/
     position: absolute;
     top: -15px;
     left: 50%;
@@ -1199,6 +1212,8 @@
     border-radius: 50px;
     white-space: nowrap;
   }
+
+
 
   .pricing-plan:hover {
     transform: translateY(-5px);
@@ -1225,7 +1240,7 @@
     font-size: 3rem;
     font-weight: 700;
     color: var(--text);
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
   }
 
   .pricing-price span {
@@ -1237,6 +1252,7 @@
   .pricing-duration {
     color: var(--text-light);
     font-size: 0.95rem;
+    margin-bottom: 1.2rem;
   }
 
   .pricing-features {
@@ -1252,7 +1268,8 @@
   }
 
   .pricing-features li i {
-    color: var(--success);
+    /* color: var(--success); */
+    color: #6CCA9C;
     margin-right: 0.75rem;
   }
 
