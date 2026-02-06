@@ -1056,6 +1056,115 @@
     box-shadow: var(--shadow-lg);
   }
 
+  /* Feedback Section */
+  .feedback {
+    background-color: var(--secondary);
+    padding: 6rem 0;
+  }
+
+  .feedback-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0 3rem;
+    flex-wrap: wrap;
+  }
+
+  .feedback-rating,
+  .feedback-percent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .feedback-rating {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .rating-stars {
+    font-size: 2rem;
+  }
+
+  .rating-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .rating-max {
+    font-size: 1.5rem;
+    color: var(--text-light);
+  }
+
+  .rating-label,
+  .percent-label {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+
+  .percent-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .feedback-heading {
+    font-size: 1.5rem;
+    margin: 2rem 0 1.5rem;
+    text-align: center;
+  }
+
+  .feedback-points {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .feedback-point {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200);
+  }
+
+  .feedback-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .feedback-point h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .feedback-point p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    .feedback-points {
+      grid-template-columns: 1fr;
+    }
+
+    .feedback-stats {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
   /* Testimonials */
   .testimonials {
     background-color: var(--white);
