@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const slider = document.getElementById('testimonials-slider');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
-    const dots = document.querySelectorAll('.slider-dot');
     let currentSlide = 0;
     
     function updateSlider() {
@@ -64,18 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
         left: cardWidth * currentSlide,
         behavior: 'smooth'
       });
-      
-      // Update dots
-      dots.forEach((dot, index) => {
-        if (index === currentSlide) {
-          dot.classList.add('active');
-        } else {
-          dot.classList.remove('active');
-        }
-      });
     }
     
-    // Add click handlers for slider buttons
     if (prevBtn) {
       prevBtn.addEventListener('click', () => {
         const cards = slider.querySelectorAll('.testimonial-card');
@@ -91,14 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateSlider();
       });
     }
-    
-    // Add click handlers for dots
-    dots.forEach((dot, index) => {
-      dot.addEventListener('click', () => {
-        currentSlide = index;
-        updateSlider();
-      });
-    });
   
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
